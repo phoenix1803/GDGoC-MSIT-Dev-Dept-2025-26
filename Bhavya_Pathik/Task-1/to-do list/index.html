@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="todo_container">
+        <div class="todo_top">
+            <div class="pfp"></div>
+            <p>User677625</p>
+            <div class="points-display">Points: <span id="points">0</span></div>
+        </div>
+        <div class="add_task">
+            <div class="add_task1">
+                <div class= "taskbar">
+                    <div class="addicon"></div>
+                    <p>Add New Task</p>
+                </div>
+            </div>
+            <div class="taskinput">
+                <div class="input_holder">
+                    <input type="text" id="taskinput" placeholder="What's the task today?...">
+                </div>    
+                <button class="buttonadd">
+                    <div class="add2"></div>
+                    <p>Add Task</p>
+                </button>
+            </div>
+        </div>
+        <div class="todobody">
+            <div class="todocontent">
+                <p>Task Log</p>
+            </div>
+            <div class="todocontent2">
+                <ul id="tasklist"></ul>
+                <div class="centerempty"><p>No Tasks Yet! Add your Tasks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="milestone-popup" class="popup">
+        <p id="popup-text">🎉 Congratulations! You reached a milestone!</p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
