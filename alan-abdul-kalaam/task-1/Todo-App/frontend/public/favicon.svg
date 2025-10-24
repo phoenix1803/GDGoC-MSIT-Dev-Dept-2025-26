@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#gradient)"/>
+  
+  <!-- Game Controller -->
+  <g transform="translate(50, 50)">
+    <!-- Main body -->
+    <rect x="-30" y="-15" width="60" height="30" rx="8" fill="white" opacity="0.95"/>
+    
+    <!-- D-Pad -->
+    <rect x="-22" y="-6" width="14" height="4" fill="#06b6d4"/>
+    <rect x="-18" y="-10" width="6" height="12" fill="#06b6d4"/>
+    
+    <!-- Buttons -->
+    <circle cx="15" cy="-6" r="3.5" fill="#2563eb"/>
+    <circle cx="22" cy="-6" r="3.5" fill="#2563eb"/>
+    <circle cx="15" cy="2" r="3.5" fill="#2563eb"/>
+    <circle cx="22" cy="2" r="3.5" fill="#2563eb"/>
+    
+    <!-- Checkmark overlay -->
+    <path d="M -8 -2 L -4 2 L 2 -6" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
