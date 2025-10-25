@@ -1,0 +1,13 @@
+<%- include("./partials/header.ejs") -%> 
+
+<div class="quiz-container score-page">
+    <h1>Quiz Complete! 🎉</h1>
+    <h2>Final Score: <%= finalScore %> / <%= totalQuestions %></h2>
+    <p>You answered <%= finalScore %> questions correctly out of <%= totalQuestions %>.</p>
+    
+    <form action="/" method="GET">
+        <button type="submit">Start Over</button>
+    </form>
+</div>
+
+<%- include("./partials/footer.ejs") -%>

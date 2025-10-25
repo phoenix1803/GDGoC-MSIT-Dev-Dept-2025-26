@@ -1,0 +1,35 @@
+<%- include("./partials/header.ejs") -%> <% if(question){ %>
+
+<div class="question-container">
+  <div class="question-header">
+    <h1><%= question.id %></h1>
+    <h1><%= question.question %></h1>
+  </div>
+  <div>
+    <form action="/" method="POST">
+      <% for (let key in question.options) { %>
+      <div>
+        <input
+          type="radio"
+          id="<%= key %>"
+          name="userAnswer"
+          value="<%= key %>"
+          required
+        />
+        <label class="option-label" for="<%= key %>">
+          <h2><%= key %>. <%= question.options[key] %></h2>
+        </label>
+      </div>
+      <% } %>
+
+      <div>
+        <% if(question.id === 10) { %>
+        <button id="submit" type="submit"><h1>End Quiz</h1></button>
+        <% }else{ %>
+        <button id="submit" type="submit"><h1>Next Question</h1></button>
+        <% } %>
+      </div>
+    </form>
+  </div>
+</div>
+<% } %> <%- include("./partials/footer.ejs") -%>
