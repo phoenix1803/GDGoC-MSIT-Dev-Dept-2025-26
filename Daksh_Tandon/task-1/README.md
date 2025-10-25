@@ -1,0 +1,1 @@
+Hello Everyone I have made a To do list app with the help of my current tech stack HTML CSS JS I have used local storage to store the name and password in login I have also added a twist in my project when all the task are completed the background image will change else it will show the number of task completed out of total
