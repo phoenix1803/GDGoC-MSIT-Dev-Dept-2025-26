@@ -33,21 +33,17 @@ listContainer.addEventListener("click", function(e) {
   if (e.target.tagName === "LI") {
     e.target.classList.toggle("checked");
 
-    // Add or remove points
     if (e.target.classList.contains("checked")) {
       points += 10;
     } else {
       points -= 10;
     }
 
-    // Update display
     pointsDisplay.innerText = `Points: ${points}`;
     localStorage.setItem("points", points);
 
-    // Update progress bar
     progressBar.style.width = (points % 100) + "%";
 
-    // Level-up message
     if (points > 0 && points % 50 === 0) {
       alert("🎉 Level Up! You’re crushing your goals!");
     }
