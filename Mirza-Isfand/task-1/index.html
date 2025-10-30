@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List with Gamification</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>To-Do List <img src="images/icon.png" alt="icon" /></h2>
+        
+        <div class="points-section">
+          <h3 id="points">Points: 0</h3>
+          <div class="progress">
+            <div id="progress-bar"></div>
+          </div>
+          <button id="reset-points-btn" class="reset-btn">Reset Points</button>
+        </div>
+
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your task" />
+          <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="list-container"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
