@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #555454);
+  color: #f1f1f1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+h1, h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #3a3a3a;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a5a5a;
+}
+
+.hide {
+  display: none;
+}
+
+.optionbtn {
+  width: 100%;
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.optionbtn:hover {
+  background: #333;
+}
+
+.correct {
+  background: #198754 !important;
+  border-color: #198754;
+}
+
+.incorrect {
+  background: #dc3545 !important;
+  border-color: #dc3545;
+}
+
+#nextbtn {
+  margin-top: 20px;
+  display: none;
+  width: 100%;
+}
+
+.questioncount {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.result h2 {
+  margin-bottom: 15px;
+  color: #00ff99;
+}
+
+.result p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
