@@ -1,0 +1,125 @@
+body {
+  font-family: system-ui, sans-serif;
+  color: #87dbff;
+  display: flex;
+  justify-content: center;
+  padding: 35px 16px 16px;
+  background: linear-gradient(135deg, #0f9832, #0019be);
+  background-attachment: fixed;
+  transition: background 3s ease-in-out ;
+}
+
+.wrap {
+  width: 900px;
+  background: #1a2228;    
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+h1 { margin: 0 0 8px 0; font-size: 25px; text-align: center; font-weight: bold; color: #1144ff; font-style: oblique;}
+
+.top-row { 
+  display:flex; 
+  gap:8px; 
+  margin-bottom:12px; }
+
+input[type="text"] {
+  flex:1; 
+  padding:8px; 
+  border-radius:6px; 
+  border:1px solid #15232a; 
+  background:transparent; 
+  color: #79d5ff; 
+}
+
+button {
+  padding:8px 10px; 
+  border-radius:6px; 
+  border:none; 
+  cursor:pointer; 
+  background:#40b6ac; 
+  color:white;
+}
+button:hover {
+  background:#31c1ff;
+}
+
+.grid { 
+  display:grid; 
+  grid-template-columns: 1fr 220px; 
+  gap:12px; 
+}
+
+.panel { 
+  background:#071820; 
+  padding:12px; 
+  border-radius:8px; 
+  border:1px solid rgba(255,255,255,0.02); 
+}
+
+/* task list */
+.tasks { 
+  display:flex; 
+  flex-direction:column; 
+  gap:8px; max-height:340px; 
+  overflow:auto; 
+  padding-right:6px; 
+}
+
+.task {
+  display:flex; 
+  gap:8px; 
+  align-items:center;
+  padding:8px; 
+  border-radius:6px; 
+  background:rgba(255, 255, 255, 0.01);
+  border:1px solid rgba(255,255,255,0.02);
+}
+.task .title { flex:1; }
+
+.task.completed {
+  background: #164537; 
+  border-color: rgba(20,120,80,0.18);
+  font-weight: bold;
+  font-size: 18px;
+  color: #82ff84;
+}
+
+.small {
+  font-size: 17px; 
+  color:#26c394;
+font-weight: bold; }
+
+.quote-card { 
+  margin-top:12px; 
+  background:#061622; 
+  padding:12px; 
+  border-radius:8px; 
+  border:1px solid rgba(255,255,255,0.02);
+  text-align: center;
+}
+
+
+.quote-text { 
+  font-style:italic; 
+  color:#9fb0c1; 
+  margin-top:6px;
+  font-size: 15px; }
+
+.quote-card button { 
+  font-size:10px; 
+  padding:6px 8px;
+  background:#061622;
+  color: #79d2ff;
+}
+
+#taskInput {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #2f5567; 
+  border-radius: 6px;         
+  outline: none;              
+  transition: border-color 0.3s ease;
+}
