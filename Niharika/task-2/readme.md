@@ -24,7 +24,7 @@ A simple Quiz App for Task 2 that contains basic web development questions. User
 ## Demo
 You can see the Quiz App in action in this demo video:
 
-[Watch Demo](./demo/demo-video.mov)
+[Watch Demo](demo/Task-2-Demo.mov)
 
 ## Author
 **Niharika Shokeen**
